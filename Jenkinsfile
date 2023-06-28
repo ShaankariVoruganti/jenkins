@@ -1,9 +1,9 @@
-node{
+pipeline{
   agent any
   stages{
     stage('git clone'){
       steps{
-        git 'https://github.com/ShaankariVoruganti/jenkins'
+        sh 'git clone https://github.com/ShaankariVoruganti/jenkins'
       }
     }
         stage('init'){
