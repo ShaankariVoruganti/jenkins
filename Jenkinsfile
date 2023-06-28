@@ -1,12 +1,7 @@
 pipeline{
   agent any
   stages{
-    stage('git clone'){
-      steps{
-        sh 'git clone https://github.com/ShaankariVoruganti/jenkins.git'
-      }
-    }
-    stage('init'){
+        stage('init'){
       steps{
         sh 'terraform init'
       }
